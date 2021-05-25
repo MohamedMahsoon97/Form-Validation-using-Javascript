@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <!------------------------ Start Section --------------------------->
+        <div class="row">
+            <div class="col-md-12">
+                <form name="RegisterForm" id="regForm">
+                    <h1> Contact us </h1>
+                    
+                    <fieldset>
+                        <div class="info"><span class="number">1</span> Your Basic Info</div>      
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="user_name">
+                        <label for="email">Email:</label>
+                        <input type="text" id="mail" name="user_email">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="user_password">       
+                    </fieldset>
+                    <fieldset>  
+                        <div class="info"><span class="number">2</span> Your Profile</div>
+                        <label for="bio">Bio:</label>
+                        <textarea id="bio" name="user_bio"></textarea> 
+                        <label for="job">Job Role:</label>
+
+                        <select id="job" name="user_job">
+                            <optgroup label="Web">
+                                <option value="frontend_developer">Front-End Developer</option>
+                                <option value="Back-End_developer">Back-End Developer</option>
+                            </optgroup>
+                            <optgroup label="Mobile">
+                                <option value="android_developer">Android Developer</option>
+                                <option value="ios_developer">IOS Developer</option>
+                                <option value="mobile_designer">Flutter Developer</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                    <button type="submit" onclick="">Contact us</button>
+                    <button type="reset" onclick="ClearInp()">Clear</button>
+                </form>
+            </div>
+        </div>
+        <!------------------------ End Section ----------------------------->
+        <script src="js/script.js"></script>
+    </body>
+</html>
